@@ -24,9 +24,14 @@ import net.runelite.client.ui.overlay.Overlay;
 import net.runelite.client.ui.overlay.OverlayLayer;
 import net.runelite.client.ui.overlay.OverlayPosition;
 import net.runelite.client.ui.overlay.OverlayUtil;
+import java.util.HashSet;
 
 public class GroundObjectIdHighlighterOverlay extends Overlay
 {
+    public Set<Integer> parseConfiguredObjectIds()
+    {
+        return new HashSet<>(parseIds(config.objectIds()));
+    }
     private final Client client;
     private final GroundObjectIdHighlighterPlugin plugin;
     private final GroundObjectIdHighlighterConfig config;
