@@ -7,3 +7,25 @@ build
 nbactions.xml
 nb-configuration.xml
 nbproject/
+
+# Gradle
+.gradle/
+build/
+
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# Local Java override
+gradle.properties
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Compiled classes
+*.class
